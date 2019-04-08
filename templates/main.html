@@ -1,0 +1,31 @@
+<html>
+<head>
+
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+<body>
+	<div class="container"> <center>
+
+<h1><strong> Flask Blog App</strong></h1> 
+<a href="/add_post" class="btn btn-success">Add Post</a>
+	
+	<strong>
+
+	{% for post in posts %}
+		<div class="jumbotron">
+	<h2>{{post['title']}} </h2></br>
+	<h3> {{post['content']}} </h3>
+			</div>
+	{% endfor %}
+
+	 </strong>
+
+</center>
+</div>
+
+</body>
+
+</html>

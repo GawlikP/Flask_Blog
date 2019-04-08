@@ -1,0 +1,26 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container"></div> <center>
+		<div class="jumbotron">
+		<form method="POST">
+			<div class="form-group">
+			<p> Create Post</p>
+			Title:<input type="text" class="form-control" name="title"/></br>
+			Content:<textarea class="form-control" name="content">
+			</textarea>
+			<input type="submit" value="OK"/> </br>
+			<p><div class="alert alert-danger"> <strong> Autentication </strong></div></p>
+			{% if error %}
+				<div class="alert alert-danger"><strong>Wrong Password or Usename</strong></div> 
+			{% endif %}
+			Admin name:<input type="text" class="form-control" name="username"/> </br>
+			Admin password:<input type="password" class="form-control" name="password"/> </br> </div>
+		</form></center>
+		</div>
+	</div>
+</body>
+</html>
